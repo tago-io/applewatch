@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0717D06623AD83E00001859E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717D06523AD83E00001859E /* AboutView.swift */; };
+		0717D06823AD874A0001859E /* CommandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717D06723AD874A0001859E /* CommandsView.swift */; };
+		0717D06C23AD9B300001859E /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0717D06B23AD9B300001859E /* SwiftyJSON */; };
+		0717D08D23B1733A0001859E /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717D08C23B1733A0001859E /* Command.swift */; };
+		07A8545923AC478F00CC2A27 /* tagowatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 07A8545823AC478F00CC2A27 /* tagowatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		07A8545F23AC478F00CC2A27 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A8545D23AC478F00CC2A27 /* Interface.storyboard */; };
+		07A8546123AC479100CC2A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A8546023AC479100CC2A27 /* Assets.xcassets */; };
+		07A8546823AC479100CC2A27 /* tagowatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07A8546723AC479100CC2A27 /* tagowatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		07A8546F23AC479100CC2A27 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8546E23AC479100CC2A27 /* HostingController.swift */; };
+		07A8547123AC479100CC2A27 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8547023AC479100CC2A27 /* ExtensionDelegate.swift */; };
+		07A8547323AC479100CC2A27 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8547223AC479100CC2A27 /* NotificationController.swift */; };
+		07A8547523AC479100CC2A27 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8547423AC479100CC2A27 /* NotificationView.swift */; };
+		07A8547723AC479100CC2A27 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8547623AC479100CC2A27 /* ComplicationController.swift */; };
+		07A8547923AC479100CC2A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A8547823AC479100CC2A27 /* Assets.xcassets */; };
+		07A8547C23AC479100CC2A27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A8547B23AC479100CC2A27 /* Preview Assets.xcassets */; };
+		07A8549223AC4B9000CC2A27 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 07A8549123AC4B9000CC2A27 /* Alamofire */; };
+		07A8549423AC593E00CC2A27 /* ActivityIndicatorByHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8549323AC593E00CC2A27 /* ActivityIndicatorByHand.swift */; };
+		07A8549723AC5E4500CC2A27 /* WatchOsCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07A8549523AC5E4500CC2A27 /* WatchOsCoreData.xcdatamodeld */; };
+		07A8549B23AC64E200CC2A27 /* TSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8549A23AC64E200CC2A27 /* TSystem.swift */; };
+		07A8549E23AC78B600CC2A27 /* getFirstToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8549D23AC78B600CC2A27 /* getFirstToken.swift */; };
+		07F503C723AD52AC00063134 /* VariablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F503C623AD52AC00063134 /* VariablesView.swift */; };
+		07F503C923AD530C00063134 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F503C823AD530C00063134 /* SetupView.swift */; };
+		07F503CC23AD538500063134 /* InitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F503CB23AD538500063134 /* InitView.swift */; };
+		07F503D023AD542600063134 /* NavigationHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F503CF23AD542600063134 /* NavigationHorizontalView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07A8545A23AC478F00CC2A27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A8544E23AC478F00CC2A27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07A8545723AC478F00CC2A27;
+			remoteInfo = "tagowatch WatchKit App";
+		};
+		07A8546923AC479100CC2A27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07A8544E23AC478F00CC2A27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07A8546623AC479100CC2A27;
+			remoteInfo = "tagowatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07A8548423AC479100CC2A27 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				07A8546823AC479100CC2A27 /* tagowatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A8548823AC479100CC2A27 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				07A8545923AC478F00CC2A27 /* tagowatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0717D06523AD83E00001859E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		0717D06723AD874A0001859E /* CommandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsView.swift; sourceTree = "<group>"; };
+		0717D08C23B1733A0001859E /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		07A8545423AC478F00CC2A27 /* TagoIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagoIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A8545823AC478F00CC2A27 /* tagowatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tagowatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A8545E23AC478F00CC2A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		07A8546023AC479100CC2A27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07A8546223AC479100CC2A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A8546723AC479100CC2A27 /* tagowatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "tagowatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A8546E23AC479100CC2A27 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		07A8547023AC479100CC2A27 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		07A8547223AC479100CC2A27 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		07A8547423AC479100CC2A27 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		07A8547623AC479100CC2A27 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		07A8547823AC479100CC2A27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07A8547B23AC479100CC2A27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07A8547D23AC479100CC2A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A8547E23AC479100CC2A27 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		07A8549323AC593E00CC2A27 /* ActivityIndicatorByHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorByHand.swift; sourceTree = "<group>"; };
+		07A8549623AC5E4500CC2A27 /* LocalDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocalDatabase.xcdatamodel; sourceTree = "<group>"; };
+		07A8549A23AC64E200CC2A27 /* TSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSystem.swift; sourceTree = "<group>"; };
+		07A8549D23AC78B600CC2A27 /* getFirstToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getFirstToken.swift; sourceTree = "<group>"; };
+		07F503C623AD52AC00063134 /* VariablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariablesView.swift; sourceTree = "<group>"; };
+		07F503C823AD530C00063134 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		07F503CB23AD538500063134 /* InitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitView.swift; sourceTree = "<group>"; };
+		07F503CF23AD542600063134 /* NavigationHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHorizontalView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07A8546423AC479100CC2A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0717D06C23AD9B300001859E /* SwiftyJSON in Frameworks */,
+				07A8549223AC4B9000CC2A27 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0717D06D23ADC8170001859E /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				07A8549D23AC78B600CC2A27 /* getFirstToken.swift */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		07A8544D23AC478F00CC2A27 = {
+			isa = PBXGroup;
+			children = (
+				07A8545C23AC478F00CC2A27 /* tagowatch WatchKit App */,
+				07A8546B23AC479100CC2A27 /* tagowatch WatchKit Extension */,
+				07A8545523AC478F00CC2A27 /* Products */,
+				07A8549023AC4B9000CC2A27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07A8545523AC478F00CC2A27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07A8545423AC478F00CC2A27 /* TagoIO.app */,
+				07A8545823AC478F00CC2A27 /* tagowatch WatchKit App.app */,
+				07A8546723AC479100CC2A27 /* tagowatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07A8545C23AC478F00CC2A27 /* tagowatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				07A8545D23AC478F00CC2A27 /* Interface.storyboard */,
+				07A8546023AC479100CC2A27 /* Assets.xcassets */,
+				07A8546223AC479100CC2A27 /* Info.plist */,
+			);
+			path = "tagowatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		07A8546B23AC479100CC2A27 /* tagowatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				07A8547823AC479100CC2A27 /* Assets.xcassets */,
+				07A8547623AC479100CC2A27 /* ComplicationController.swift */,
+				07A8547023AC479100CC2A27 /* ExtensionDelegate.swift */,
+				07A8546E23AC479100CC2A27 /* HostingController.swift */,
+				07A8547D23AC479100CC2A27 /* Info.plist */,
+				07F503CA23AD535700063134 /* Models */,
+				07A8547223AC479100CC2A27 /* NotificationController.swift */,
+				07A8547423AC479100CC2A27 /* NotificationView.swift */,
+				07A8547A23AC479100CC2A27 /* Preview Content */,
+				07A8547E23AC479100CC2A27 /* PushNotificationPayload.apns */,
+				07F503C523AD4F5B00063134 /* Views */,
+				07A8549523AC5E4500CC2A27 /* WatchOsCoreData.xcdatamodeld */,
+			);
+			path = "tagowatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		07A8547A23AC479100CC2A27 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				07A8547B23AC479100CC2A27 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07A8549023AC4B9000CC2A27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07F503C523AD4F5B00063134 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0717D06D23ADC8170001859E /* Scripts */,
+				07F503D123AD54E200063134 /* Utils */,
+				07F503C623AD52AC00063134 /* VariablesView.swift */,
+				07F503C823AD530C00063134 /* SetupView.swift */,
+				07F503CB23AD538500063134 /* InitView.swift */,
+				07F503CF23AD542600063134 /* NavigationHorizontalView.swift */,
+				0717D06523AD83E00001859E /* AboutView.swift */,
+				0717D06723AD874A0001859E /* CommandsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07F503CA23AD535700063134 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07A8549A23AC64E200CC2A27 /* TSystem.swift */,
+				0717D08C23B1733A0001859E /* Command.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07F503D123AD54E200063134 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				07A8549323AC593E00CC2A27 /* ActivityIndicatorByHand.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07A8545323AC478F00CC2A27 /* tagowatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A8548923AC479100CC2A27 /* Build configuration list for PBXNativeTarget "tagowatch" */;
+			buildPhases = (
+				07A8545223AC478F00CC2A27 /* Resources */,
+				07A8548823AC479100CC2A27 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07A8545B23AC478F00CC2A27 /* PBXTargetDependency */,
+			);
+			name = tagowatch;
+			packageProductDependencies = (
+				07A8548D23AC482A00CC2A27 /* Alamofire */,
+				0717D06A23AD9B1F0001859E /* SwiftyJSON */,
+			);
+			productName = tagowatch;
+			productReference = 07A8545423AC478F00CC2A27 /* TagoIO.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		07A8545723AC478F00CC2A27 /* tagowatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A8548523AC479100CC2A27 /* Build configuration list for PBXNativeTarget "tagowatch WatchKit App" */;
+			buildPhases = (
+				07A8545623AC478F00CC2A27 /* Resources */,
+				07A8548423AC479100CC2A27 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07A8546A23AC479100CC2A27 /* PBXTargetDependency */,
+			);
+			name = "tagowatch WatchKit App";
+			productName = "tagowatch WatchKit App";
+			productReference = 07A8545823AC478F00CC2A27 /* tagowatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		07A8546623AC479100CC2A27 /* tagowatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07A8548123AC479100CC2A27 /* Build configuration list for PBXNativeTarget "tagowatch WatchKit Extension" */;
+			buildPhases = (
+				07A8546323AC479100CC2A27 /* Sources */,
+				07A8546423AC479100CC2A27 /* Frameworks */,
+				07A8546523AC479100CC2A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tagowatch WatchKit Extension";
+			packageProductDependencies = (
+				07A8549123AC4B9000CC2A27 /* Alamofire */,
+				0717D06B23AD9B300001859E /* SwiftyJSON */,
+			);
+			productName = "tagowatch WatchKit Extension";
+			productReference = 07A8546723AC479100CC2A27 /* tagowatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07A8544E23AC478F00CC2A27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = TagoIO;
+				TargetAttributes = {
+					07A8545323AC478F00CC2A27 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					07A8545723AC478F00CC2A27 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					07A8546623AC479100CC2A27 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 07A8545123AC478F00CC2A27 /* Build configuration list for PBXProject "tagowatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07A8544D23AC478F00CC2A27;
+			packageReferences = (
+				07A8548C23AC482A00CC2A27 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0717D06923AD9B1F0001859E /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = 07A8545523AC478F00CC2A27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07A8545323AC478F00CC2A27 /* tagowatch */,
+				07A8545723AC478F00CC2A27 /* tagowatch WatchKit App */,
+				07A8546623AC479100CC2A27 /* tagowatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07A8545223AC478F00CC2A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A8545623AC478F00CC2A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A8546123AC479100CC2A27 /* Assets.xcassets in Resources */,
+				07A8545F23AC478F00CC2A27 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07A8546523AC479100CC2A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A8547C23AC479100CC2A27 /* Preview Assets.xcassets in Resources */,
+				07A8547923AC479100CC2A27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07A8546323AC479100CC2A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0717D06623AD83E00001859E /* AboutView.swift in Sources */,
+				07F503CC23AD538500063134 /* InitView.swift in Sources */,
+				07A8546F23AC479100CC2A27 /* HostingController.swift in Sources */,
+				0717D08D23B1733A0001859E /* Command.swift in Sources */,
+				07F503C923AD530C00063134 /* SetupView.swift in Sources */,
+				07A8549723AC5E4500CC2A27 /* WatchOsCoreData.xcdatamodeld in Sources */,
+				07A8549B23AC64E200CC2A27 /* TSystem.swift in Sources */,
+				07A8549E23AC78B600CC2A27 /* getFirstToken.swift in Sources */,
+				07A8547323AC479100CC2A27 /* NotificationController.swift in Sources */,
+				07A8547123AC479100CC2A27 /* ExtensionDelegate.swift in Sources */,
+				07A8549423AC593E00CC2A27 /* ActivityIndicatorByHand.swift in Sources */,
+				07A8547523AC479100CC2A27 /* NotificationView.swift in Sources */,
+				07A8547723AC479100CC2A27 /* ComplicationController.swift in Sources */,
+				0717D06823AD874A0001859E /* CommandsView.swift in Sources */,
+				07F503C723AD52AC00063134 /* VariablesView.swift in Sources */,
+				07F503D023AD542600063134 /* NavigationHorizontalView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07A8545B23AC478F00CC2A27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07A8545723AC478F00CC2A27 /* tagowatch WatchKit App */;
+			targetProxy = 07A8545A23AC478F00CC2A27 /* PBXContainerItemProxy */;
+		};
+		07A8546A23AC479100CC2A27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07A8546623AC479100CC2A27 /* tagowatch WatchKit Extension */;
+			targetProxy = 07A8546923AC479100CC2A27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07A8545D23AC478F00CC2A27 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07A8545E23AC478F00CC2A27 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07A8547F23AC479100CC2A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07A8548023AC479100CC2A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07A8548223AC479100CC2A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"tagowatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = HV62L898HE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "tagowatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tago.tagowatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "tagowatch WatchKit Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		07A8548323AC479100CC2A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"tagowatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = HV62L898HE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "tagowatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tago.tagowatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "tagowatch WatchKit Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		07A8548623AC479100CC2A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV62L898HE;
+				IBSC_MODULE = tagowatch_WatchKit_Extension;
+				INFOPLIST_FILE = "tagowatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.tago.tagowatch.watchkitapp;
+				PRODUCT_NAME = "tagowatch WatchKit App";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		07A8548723AC479100CC2A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV62L898HE;
+				IBSC_MODULE = tagowatch_WatchKit_Extension;
+				INFOPLIST_FILE = "tagowatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.tago.tagowatch.watchkitapp;
+				PRODUCT_NAME = "tagowatch WatchKit App";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		07A8548A23AC479100CC2A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV62L898HE;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tago.tagowatch;
+				PRODUCT_NAME = TagoIO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		07A8548B23AC479100CC2A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV62L898HE;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tago.tagowatch;
+				PRODUCT_NAME = TagoIO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07A8545123AC478F00CC2A27 /* Build configuration list for PBXProject "tagowatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A8547F23AC479100CC2A27 /* Debug */,
+				07A8548023AC479100CC2A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07A8548123AC479100CC2A27 /* Build configuration list for PBXNativeTarget "tagowatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A8548223AC479100CC2A27 /* Debug */,
+				07A8548323AC479100CC2A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07A8548523AC479100CC2A27 /* Build configuration list for PBXNativeTarget "tagowatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A8548623AC479100CC2A27 /* Debug */,
+				07A8548723AC479100CC2A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07A8548923AC479100CC2A27 /* Build configuration list for PBXNativeTarget "tagowatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07A8548A23AC479100CC2A27 /* Debug */,
+				07A8548B23AC479100CC2A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0717D06923AD9B1F0001859E /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		07A8548C23AC482A00CC2A27 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "5.0.0-rc.3";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0717D06A23AD9B1F0001859E /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0717D06923AD9B1F0001859E /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		0717D06B23AD9B300001859E /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0717D06923AD9B1F0001859E /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		07A8548D23AC482A00CC2A27 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07A8548C23AC482A00CC2A27 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		07A8549123AC4B9000CC2A27 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07A8548C23AC482A00CC2A27 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		07A8549523AC5E4500CC2A27 /* WatchOsCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				07A8549623AC5E4500CC2A27 /* LocalDatabase.xcdatamodel */,
+			);
+			currentVersion = 07A8549623AC5E4500CC2A27 /* LocalDatabase.xcdatamodel */;
+			path = WatchOsCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 07A8544E23AC478F00CC2A27 /* Project object */;
+}
