@@ -17,7 +17,7 @@ struct InitView: View {
         if token == "" {
             SetupView(token: $token)
         } else {
-            NavigationHorizontalView()
+            NavigationHorizontalView(token: $token)
         }
     }
 }

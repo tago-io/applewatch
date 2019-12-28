@@ -9,7 +9,15 @@
 import SwiftUI
 
 struct AboutView: View {
-    var token = getFirstToken()
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Binding var token : String
+    @State var showsAlert = false
+    
+    func resetToken() {
+        self.token = ""
+        self.presentationMode.wrappedValue.dismiss()
+        deleteAllTokens()
+    }
 
     var body: some View {
         VStack {
@@ -18,6 +26,9 @@ struct AboutView: View {
                 .font(.footnote)
                 .fontWeight(.thin)
                 .lineLimit(3)
+            Button(action: {
+                self.showsAlert = true
+            }, label: { Text("Reset Token") }).accentColor(.red)
             Divider()
 //            Text("Last sync was:")
 //            Text("4PM 2019-12-29")
@@ -29,12 +40,19 @@ struct AboutView: View {
                 .foregroundColor(Color.blue)
                 .padding(.top, 5.0)
                 
+        }.alert(isPresented: self.$showsAlert) {
+            Alert(title: Text("Are you sure?"), primaryButton: Alert.Button.default(Text("No"), action: {
+                self.showsAlert = false
+            }), secondaryButton: Alert.Button.default(Text("Yes"), action: {
+                self.showsAlert = false
+                self.resetToken()
+            }))
         }
     }
 }
 
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
-        AboutView()
+        AboutView(token: .constant("XXX-QQQ-WWW"))
     }
 }

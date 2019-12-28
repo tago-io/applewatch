@@ -114,7 +114,7 @@ struct SetupNewCommandView: View {
     var body: some View {
         VStack {
             Form {
-                TextField("Command name", text: $commandName)
+                TextField("Button label", text: $commandName)
                 TextField("Variable name", text: $commandVariableName)
                 TextField("Variable value", text: $commandValue)
 //                Picker(selection: $commandType, label: Text("Value type")) {
@@ -139,9 +139,9 @@ struct SetupNewCommandView: View {
 
                     self.presentationMode.wrappedValue.dismiss()
                     
-                }, label: { Text("Add Command") }).alert(isPresented: self.$showsAlert) {
+                }, label: { Text("Add Command").foregroundColor(.green).frame(minWidth: 0, maxWidth: .infinity) }).alert(isPresented: self.$showsAlert) {
                     Alert(title: Text("Invalid field"), message: Text("\(self.errorMessage)"), dismissButton: .default(Text("Got it!")))
-                }
+                }.foregroundColor(.white).accentColor(.blue)
             }
         }.navigationBarTitle(Text("New Command"))
     }

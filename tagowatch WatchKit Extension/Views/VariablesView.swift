@@ -67,7 +67,7 @@ struct VariablesView: View {
                 }
             }
             Divider()
-        }.navigationBarTitle(Text("Bucket data")).onAppear(perform: {
+        }.navigationBarTitle(Text("Variables")).onAppear(perform: {
             self.getLastValues()
         }).padding(.horizontal, 5.0)
             .contextMenu(menuItems: {
