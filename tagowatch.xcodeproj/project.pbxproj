@@ -11,7 +11,7 @@
 		0717D06823AD874A0001859E /* CommandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717D06723AD874A0001859E /* CommandsView.swift */; };
 		0717D06C23AD9B300001859E /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0717D06B23AD9B300001859E /* SwiftyJSON */; };
 		0717D08D23B1733A0001859E /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0717D08C23B1733A0001859E /* Command.swift */; };
-		07A8545923AC478F00CC2A27 /* tagowatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 07A8545823AC478F00CC2A27 /* tagowatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		07A8545923AC478F00CC2A27 /* TagoIO Device.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 07A8545823AC478F00CC2A27 /* TagoIO Device.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		07A8545F23AC478F00CC2A27 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A8545D23AC478F00CC2A27 /* Interface.storyboard */; };
 		07A8546123AC479100CC2A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A8546023AC479100CC2A27 /* Assets.xcassets */; };
 		07A8546823AC479100CC2A27 /* tagowatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07A8546723AC479100CC2A27 /* tagowatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -69,7 +69,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				07A8545923AC478F00CC2A27 /* tagowatch WatchKit App.app in Embed Watch Content */,
+				07A8545923AC478F00CC2A27 /* TagoIO Device.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,8 +80,8 @@
 		0717D06523AD83E00001859E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		0717D06723AD874A0001859E /* CommandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsView.swift; sourceTree = "<group>"; };
 		0717D08C23B1733A0001859E /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
-		07A8545423AC478F00CC2A27 /* TagoIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagoIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		07A8545823AC478F00CC2A27 /* tagowatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tagowatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A8545423AC478F00CC2A27 /* TagoIO iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TagoIO iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A8545823AC478F00CC2A27 /* TagoIO Device.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TagoIO Device.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A8545E23AC478F00CC2A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		07A8546023AC479100CC2A27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07A8546223AC479100CC2A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,8 +141,8 @@
 		07A8545523AC478F00CC2A27 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07A8545423AC478F00CC2A27 /* TagoIO.app */,
-				07A8545823AC478F00CC2A27 /* tagowatch WatchKit App.app */,
+				07A8545423AC478F00CC2A27 /* TagoIO iOS.app */,
+				07A8545823AC478F00CC2A27 /* TagoIO Device.app */,
 				07A8546723AC479100CC2A27 /* tagowatch WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -245,7 +245,7 @@
 				0717D06A23AD9B1F0001859E /* SwiftyJSON */,
 			);
 			productName = tagowatch;
-			productReference = 07A8545423AC478F00CC2A27 /* TagoIO.app */;
+			productReference = 07A8545423AC478F00CC2A27 /* TagoIO iOS.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		07A8545723AC478F00CC2A27 /* tagowatch WatchKit App */ = {
@@ -262,7 +262,7 @@
 			);
 			name = "tagowatch WatchKit App";
 			productName = "tagowatch WatchKit App";
-			productReference = 07A8545823AC478F00CC2A27 /* tagowatch WatchKit App.app */;
+			productReference = 07A8545823AC478F00CC2A27 /* TagoIO Device.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		07A8546623AC479100CC2A27 /* tagowatch WatchKit Extension */ = {
@@ -581,7 +581,7 @@
 				IBSC_MODULE = tagowatch_WatchKit_Extension;
 				INFOPLIST_FILE = "tagowatch WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = io.tago.tagowatch.watchkitapp;
-				PRODUCT_NAME = "tagowatch WatchKit App";
+				PRODUCT_NAME = "TagoIO Device";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -600,7 +600,7 @@
 				IBSC_MODULE = tagowatch_WatchKit_Extension;
 				INFOPLIST_FILE = "tagowatch WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = io.tago.tagowatch.watchkitapp;
-				PRODUCT_NAME = "tagowatch WatchKit App";
+				PRODUCT_NAME = "TagoIO Device";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -617,7 +617,7 @@
 				DEVELOPMENT_TEAM = HV62L898HE;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.tago.tagowatch;
-				PRODUCT_NAME = TagoIO;
+				PRODUCT_NAME = "TagoIO iOS";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -630,7 +630,7 @@
 				DEVELOPMENT_TEAM = HV62L898HE;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.tago.tagowatch;
-				PRODUCT_NAME = TagoIO;
+				PRODUCT_NAME = "TagoIO iOS";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
